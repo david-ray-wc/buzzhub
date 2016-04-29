@@ -1,0 +1,52 @@
+
+// General Card
+.card {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+  .card-top {
+    background-color: $dark;
+    padding: 1em;
+
+    // flex properties
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+      flex: 5;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      @include media($medium-screen-up) {
+        flex: 3;
+      };
+    }
+
+    button {
+      flex: 1;
+    }
+    .fa-block {
+      flex: 1;
+    }
+
+    p {
+      margin-bottom: 0;
+      position: relative;
+      .active {
+        color: $secondary-background-color;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .card-body {
+    padding: 1em;
+    a {
+      color: $dark;
+      &:hover {
+        color: lighten($dark, 15%);
+      }
+    }
+  }
+}

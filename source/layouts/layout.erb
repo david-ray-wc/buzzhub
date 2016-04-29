@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "Boilermaker" %></title>
+
+    <!-- Font Awesome is awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <%= favicon_tag 'images/favicon.ico' %>
+
+    <%= stylesheet_link_tag :site %>
+  </head>
+
+  <body>
+    <%= partial "partials/nav" %>
+
+    <%= yield %>
+
+    <%= partial "partials/footer" %>
+
+    <%= javascript_include_tag 'jquery/jquery', :all %>
+    <%= google_analytics_tag %>
+  </body>
+</html>

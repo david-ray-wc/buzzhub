@@ -1,0 +1,24 @@
+.article {
+  padding: 1em;
+  position: relative;
+  @include media($medium-screen-up) {
+    padding: 3em;
+  }
+
+  .edit-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    button {
+      border-radius: 0;
+      border: 0;
+    }
+  }
+  h2 {
+    padding-bottom: .5em;
+    border-bottom: 1px solid $light-gray;
+  }
+  p {
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,31 @@
+.comment {
+  .figure {
+    @include span-columns(1);
+  }
+  .card {
+    @include span-columns(9);
+
+    .comment-top {
+      background-color: $secondary-background-color;
+      padding: .5em;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        font-size: modular_scale(-1);
+        margin: 0;
+      }
+    }
+  }
+}
+
+.comment-response {
+  .figure {
+    @include span-columns(1);
+    @include shift(1);
+  }
+  .card {
+    @include span-columns(8);
+  }
+}

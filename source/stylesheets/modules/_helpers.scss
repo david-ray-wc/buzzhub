@@ -1,0 +1,70 @@
+.active {
+  color: $dark;
+  &a:hover {
+    color: lighten($dark, 5%);
+  }
+}
+
+.faded {
+  color: $medium-gray;
+
+  &a:hover {
+    color: darken($medium-gray, 15%);
+  }
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+i.fa {
+  font-size: modular_scale(-1);
+}
+
+.badge {
+  color: #fff;
+  background: $secondary;
+  border-radius: 5%;
+  font-size: .75em;
+  display: inline-block;
+  padding: 0 5px;
+  position: relative;
+  @include media($medium-screen-up) {
+    left: 5px;
+  };
+}
+
+.row {
+  @include row();
+}
+
+// Buttons
+.btn-faded {
+  padding: 5px;
+  color: $medium-gray;
+  background-color: $secondary-background-color;
+  border: 1px solid $medium-gray;
+
+  &:hover,
+  &:focus {
+    color: inherit;
+    background-color: darken($secondary-background-color, 15%);
+  }
+  .fa {
+    font-size: initial;
+  }
+}
+
+.vr {
+  height: 2em;
+  margin-left: 25%;
+  border-left: 3px solid $medium-gray;
+}
+
+// Responsive Helpers
+.visible-lg {
+  display: none;
+  @include media($medium-screen-up) {
+    display: initial;
+  };
+}

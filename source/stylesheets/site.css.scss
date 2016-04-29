@@ -1,0 +1,179 @@
+@charset "utf-8";
+// Open Sans Font. This can be altered in _variabless.scss
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+
+// Potential Colors
+$green: #3cbc8d;
+$dark:  #253a49;
+$coral: #e37568;
+
+// Third Party Imports
+@import "vendor/normalize";
+
+// Thoughtbot Imports
+@import "bourbon";
+@import "base/base";
+@import "neat";
+
+// Boilermaker Imports
+@import "boilermaker/layout";
+@import "boilermaker/typography";
+
+// Partials Imports
+@import "partials/nav";
+@import "partials/footer";
+@import "partials/blog";
+
+// Modules Imports
+@import "modules/article";
+@import "modules/cards";
+@import "modules/helpers";
+@import "modules/comments";
+
+// Your scss can go here below
+
+.dock-nav {
+  @include row;
+}
+
+.nav-top {
+  margin-bottom: 1em;
+
+  li {
+    padding: 0;
+    font-size: modular_scale(1);
+    margin-right: 1em;
+
+    // Display Properties
+    display: inline-block;
+  }
+}
+
+.doc-nav-page {
+  @include row();
+  margin-bottom: 2em;
+  .card {
+    @include span-columns(11);
+    @include media($medium-screen-up) {
+      @include span-columns(8);
+    }
+  }
+}
+
+.dock-nav-tasks {
+  @include row();
+  .card {
+    @include media($large-screen-up) {
+      @include span-columns(10);
+    }
+  }
+  .card-body {
+    padding: 0;
+  }
+  .nav-tasks-filters {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1em 0 1em;
+    border-bottom: 1px solid $light-gray;
+
+    .tasks-left {
+      flex: 3;
+    }
+    .tasks-right {
+      flex: 1;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  section {
+    // styling
+    padding: 1em;
+    border-bottom: 1px solid $light-gray;
+
+    // display properties
+    display: flex;
+    flex-direction: row;
+
+    &:hover {
+      background-color: $secondary-background-color;
+    }
+    small {
+      @extend .faded;
+    }
+    i {
+      font-size: initial;
+    }
+    .section-left {
+      display: flex;
+      flex: 3;
+
+      i {
+        flex: 1;
+        text-align: center;
+        padding-top: 1em;
+      }
+      div {
+        flex: 9;
+        p {
+          margin: 0;
+        }
+      }
+    }
+    .section-right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      a {
+        flex: 1;
+        text-align: center;
+        img {
+          width: 50%;
+        }
+      }
+      p {
+        flex: 1;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.task-show-heading {
+  margin-top: 1em;
+
+  @include span-columns(10);
+  .left {
+    @include span-columns(8);
+
+    .sub-heading {
+      display: flex;
+      align-items: center;
+      img {
+        width: 2em;
+        margin-right: modular_scale(0);
+      }
+      .badge {
+        margin-right: modular_scale(-1);
+      }
+    }
+  }
+  .right {
+    @include span-columns(4);
+    padding-bottom: 1em;
+
+    h3 {
+      font-weight: 300;
+    }
+
+    .sub-heading {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 2em;
+        margin-right: modular_scale(0);
+      }
+    }
+  }
+}
