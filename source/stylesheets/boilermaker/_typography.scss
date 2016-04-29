@@ -2,8 +2,10 @@
 
 h1 {
   font-size: modular_scale(3);
+  margin-left: 5px;
   @media(min-width: $large-screen) {
     font-size: modular_scale(4);
+    margin-left: 0;
   }
 }
 h2 {

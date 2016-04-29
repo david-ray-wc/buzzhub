@@ -30,18 +30,7 @@ $coral: #e37568;
 @import "modules/helpers";
 @import "modules/comments";
 @import "modules/tasks";
+@import "modules/tasks";
+@import "modules/nav-top";
 
 // Your scss can go here below
-
-.nav-top {
-  margin-bottom: 1em;
-
-  li {
-    padding: 0;
-    font-size: modular_scale(1);
-    margin-right: 1em;
-
-    // Display Properties
-    display: inline-block;
-  }
-}

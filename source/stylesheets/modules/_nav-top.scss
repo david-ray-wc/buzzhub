@@ -1,9 +1,16 @@
 .nav-top {
   margin-bottom: 1em;
-
-  li {
+  ul {
     padding: 0;
-    font-size: modular_scale(1);
+    @include media($small-screen-down) {
+      margin-left: 5px;
+    }
+  }
+  li {
+    font-size: modular_scale(-1);
+    @include media($medium-screen-up) {
+      font-size: modular_scale(1);
+    };
     margin-right: 1em;
 
     // Display Properties

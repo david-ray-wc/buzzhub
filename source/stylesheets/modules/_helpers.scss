@@ -13,6 +13,10 @@
   }
 }
 
+small>a {
+  color: inherit;
+}
+
 .img-circle {
   border-radius: 50%;
 }
@@ -29,8 +33,9 @@ i.fa {
   display: inline-block;
   padding: 0 5px;
   position: relative;
+  margin-left: 5px;
   @include media($medium-screen-up) {
-    left: 5px;
+    left: 0px;
   };
 }
 
@@ -56,9 +61,14 @@ i.fa {
 }
 
 .vr {
-  height: 2em;
-  margin-left: 25%;
-  border-left: 3px solid $medium-gray;
+  height: modular_scale(0);
+  margin-left: 33%;
+  border-left: 2px solid $medium-gray;
+  @include media($medium-screen-up) {
+    height: modular_scale(3);
+    margin-left: 25%;
+    border-left: 3px solid $medium-gray;
+  };
 }
 
 // Responsive Helpers
@@ -66,5 +76,12 @@ i.fa {
   display: none;
   @include media($medium-screen-up) {
     display: initial;
+  };
+}
+
+.hidden-md {
+  display: initial;
+  @include media($medium-screen-up) {
+    display: none;
   };
 }
