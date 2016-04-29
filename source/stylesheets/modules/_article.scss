@@ -1,3 +1,14 @@
+.doc-nav-page {
+  @include row();
+  margin-bottom: 2em;
+  .card {
+    @include span-columns(11);
+    @include media($medium-screen-up) {
+      @include span-columns(8);
+    }
+  }
+}
+
 .article {
   padding: 1em;
   position: relative;

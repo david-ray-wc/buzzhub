@@ -62,7 +62,7 @@ i.fa {
 }
 
 // Responsive Helpers
-.visible-lg {
+.visible-md {
   display: none;
   @include media($medium-screen-up) {
     display: initial;
