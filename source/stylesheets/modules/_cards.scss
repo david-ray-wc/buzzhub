@@ -45,10 +45,20 @@
 
   .card-body {
     padding: 1em;
+    position: relative;
     a {
       color: $dark;
       &:hover {
         color: lighten($dark, 15%);
+      }
+    }
+    .settings-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      button {
+        border-radius: 0;
+        border: 0;
       }
     }
   }
