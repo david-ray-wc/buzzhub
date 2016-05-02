@@ -37,6 +37,9 @@
       color: darken($blue, 10%)
     }
   }
+  ul {
+    margin-bottom: modular_scale(-1);
+  }
   li {
     margin-bottom: 1em;
     @include media($medium-screen-up) {
