@@ -1,0 +1,78 @@
+<main>
+  <nav class="nav-top">
+    <ul class="list-inline">
+      <li><a href="/" class="active"><i class="fa fa-home"></i> Daplgray</a></li>
+      <li><a href="#"><i class="fa fa-book"></i> Wiki</a></li>
+      <li><a href="#"><i class="fa fa-building-o"></i> Organization</a></li>
+      <li><a href="#"><i class="fa fa-cogs"></i> Settings</a></li>
+    </ul>
+  </nav>
+
+  <!-- Start Wiki Page -->
+  <div class="wiki-top">
+    <h2 class="small">Wiki</h2>
+    <h1>Wiki Home Page</h1>
+    <button type="button" name="button" class="hidden-md"><i class="fa fa-plus"></i> Add Page</button>
+  </div>
+
+  <section class="row">
+    <div class="wiki-left">
+      <article class="article wiki-article">
+        <span class="edit-content"><button class="btn-faded"><i class="fa fa-pencil"></i><span class="visible-md"> edit</span></button></i></span>
+
+        <h2>Handbook</h2>
+        <p>This is an example handbook that can be made in the Wiki.</p>
+
+        <h3><%= lorem.words 3 %></h3>
+        <p><%= lorem.paragraphs 2 %></p>
+        <p><%= lorem.paragraph %></p>
+        <p><%= lorem.words 2 %></p>
+        <ul>
+          <li><%= lorem.word %></li>
+          <li><%= lorem.word %></li>
+          <li><%= lorem.word %></li>
+          <li><%= lorem.word %></li>
+        </ul>
+
+        <h2><%= lorem.words 3 %></h2>
+        <p><%= lorem.paragraphs 2 %></p>
+        <p><%= lorem.paragraph %></p>
+        <p><%= lorem.words 2 %></p>
+        <ul>
+          <li><%= lorem.word %></li>
+          <li><%= lorem.word %></li>
+          <li><%= lorem.word %></li>
+          <li><%= lorem.word %></li>
+        </ul>
+
+        <p><%= lorem.paragraphs 2 %></p>
+
+      </article>
+      <footer class="wiki-footer card article">
+        <span class="edit-content"><button class="btn-faded"><i class="fa fa-pencil"></i> edit</button></i></span>
+        <p><strong>This is the footer</strong></p>
+        <p>There are tons of things you can add to the footer. This is what a <a href="#">link</a> will look like here.</p>
+      </footer>
+    </div>
+
+    <div class="wiki-right">
+      <button type="button" name="button" class="visible-md"><i class="fa fa-plus"></i> Add Page</button>
+      <aside class="wiki-aside card article">
+        <span class="edit-content"><button class="btn-faded"><i class="fa fa-pencil"></i> edit</button></i></span>
+        <p><strong>Sidebar</strong></p>
+        <p>This is where you put information for the sidebar. This can mean a custom navigation or links to outside resources.</p>
+        <p>
+          <strong>Pages</strong>
+          <p><a href="/wiki-handbook">Handbook</a></p>
+        </p>
+        <p>Outside Resources</p>
+        <ul>
+          <li><a href="#">Wikipedia</a></li>
+          <li><a href="">Githup</a></li>
+          <li><a href="">Facebook</a></li>
+        </ul>
+      </aside>
+    </div>
+
+  </section>
+</main>

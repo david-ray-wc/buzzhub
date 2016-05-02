@@ -1,30 +1,30 @@
 @charset "utf-8";
-// Open Sans Font. This can be altered in _variabless.scss
+/* Open Sans Font. This can be altered in _variabless.scss*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
 
-// Potential Colors
+/* Potential Colors*/
 $green: #3cbc8d;
 $dark:  #253a49;
 $coral: #e37568;
 
-// Third Party Imports
+/* Third Party Imports*/
 @import "vendor/normalize";
 
-// Thoughtbot Imports
+/* Thoughtbot Imports*/
 @import "bourbon";
 @import "base/base";
 @import "neat";
 
-// Boilermaker Imports
+/* Boilermaker Imports*/
 @import "boilermaker/layout";
 @import "boilermaker/typography";
 
-// Partials Imports
+/* Partials Imports*/
 @import "partials/nav";
 @import "partials/footer";
 @import "partials/blog";
 
-// Modules Imports
+/* Modules Imports*/
 @import "modules/article";
 @import "modules/cards";
 @import "modules/helpers";
@@ -33,4 +33,67 @@ $coral: #e37568;
 @import "modules/tasks";
 @import "modules/nav-top";
 
-// Your scss can go here below
+/* Your scss can go here below*/
+
+.wiki-top{
+  .small {
+    font-size: modular_scale(2);
+    color: $medium-gray;
+    margin: 0;
+    font-weight: 300;
+    position: relative;
+
+    @include media($small-screen-down) {
+      margin-left: 5px;
+    };
+  }
+
+  button {
+    float: right;
+    margin: 0 5px 1em 0;
+  }
+}
+
+.wiki-left {
+  @include span_columns(12);
+  @include media($medium-screen-up) {
+    @include span_columns(9);
+  };
+
+  margin-bottom: 1em;
+
+  .wiki-article {
+    padding: 2em 1em;
+    min-height: 50vh;
+    @include media($medium-screen-up) {
+      min-height: 33vh;
+      padding: 1em;
+    }
+
+    .btn-faded {
+      background-color: white;
+      border-radius: 50%;
+    }
+  }
+
+  .wiki-footer {
+    padding: 1em;
+    background-color: $secondary-background-color;
+  }
+}
+
+.wiki-right {
+  @include span_columns(10);
+  @include media($medium-screen-up) {
+    @include span_columns(3);
+  };
+
+  button {
+    width: 100%;
+    margin-bottom: modular_scale(0);
+  }
+
+  .wiki-aside {
+    padding: 1em;
+  }
+}
