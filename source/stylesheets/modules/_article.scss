@@ -20,11 +20,15 @@
     position: absolute;
     top: 0;
     right: 0;
-    button {
-      border-radius: 0;
-      border: 0;
-    }
+
   }
+  .save-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+  }
+
   h2 {
     padding-bottom: .5em;
     margin: 1em 0 1em 0;
