@@ -32,68 +32,112 @@ $coral: #e37568;
 @import "modules/tasks";
 @import "modules/tasks";
 @import "modules/nav-top";
+@import "modules/wiki";
 
 /* Your scss can go here below*/
 
-.wiki-top{
-  .small {
-    font-size: modular_scale(2);
-    color: $medium-gray;
-    margin: 0;
-    font-weight: 300;
-    position: relative;
+.user-page-left {
+  padding: 1em;
+  margin-bottom: modular_scale(1);
 
-    @include media($small-screen-down) {
-      margin-left: 5px;
-    };
-  }
-
-  button {
-    float: right;
-    margin: 0 5px 1em 0;
-  }
-}
-
-.wiki-left {
-  @include span_columns(12);
-  @include media($medium-screen-up) {
-    @include span_columns(9);
-  };
-
-  margin-bottom: 1em;
-
-  .wiki-article {
-    padding: 2em 1em;
-    min-height: 50vh;
-    @include media($medium-screen-up) {
-      min-height: 33vh;
-      padding: 1em;
-    }
-
-    .btn-faded {
-      background-color: white;
-      border-radius: 50%;
-    }
-  }
-
-  .wiki-footer {
-    padding: 1em;
-    background-color: $secondary-background-color;
-  }
-}
-
-.wiki-right {
   @include span_columns(10);
   @include media($medium-screen-up) {
+    @include span_columns(4);
+  };
+  @include media($large-screen-up) {
     @include span_columns(3);
   };
 
-  button {
-    width: 100%;
-    margin-bottom: modular_scale(0);
+  .row {
+    border-bottom: 1px solid $secondary-background-color;
+    padding-bottom: modular_scale(-1);
+    margin-bottom: modular_scale(-1);
   }
 
-  .wiki-aside {
-    padding: 1em;
+  .figure {
+    @include span_columns(4);
+    @include media($medium-screen-up) {
+      @include span_columns(12);
+    }
+  }
+
+  .figcaption {
+    @include span_columns(8);
+    @include media($medium-screen-up) {
+      @include span_columns(12);
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+  h2 {
+    font-weight: 300;
+  }
+
+  h4 {
+    margin: 5px 0;
+  }
+  .bio {
+    font-weight: 300;
+    padding: 5px;
+  }
+  ul {
+    padding-left: modular_scale(0);
+  }
+  li {
+    list-style: none;
+    padding-bottom: modular_scale(0);
+
+    @include media($medium-screen-up) {
+      padding-bottom: modular_scale(-2);
+    };
+  }
+  .email {
+    font-size: modular_scale(-1);
+    i {
+      font-size: modular_scale(0);
+    }
+  }
+}
+
+.user-page-right {
+  @include span_columns(12);
+  @include media($medium-screen-up) {
+    @include span_columns(8);
+  };
+  @include media($large-screen-up) {
+    @include span_columns(7);
+  };
+  ul {
+    padding-left: 0;
+    @include media($small-screen-down) {
+      margin-left: 5px;
+    }
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  hr {
+    margin: modular_scale(-2) auto;
+    width: 66%;
+    color: $secondary-background-color;
+  }
+}
+
+.user-page-task {
+  background-color: $secondary-background-color;
+  border-bottom: 0;
+
+  .section-left {
+    align-items: center;
+    i {
+      padding: 0;
+    }
+  }
+  .section-right {
+    align-items: center;
   }
 }

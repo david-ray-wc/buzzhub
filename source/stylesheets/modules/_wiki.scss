@@ -1,0 +1,61 @@
+.wiki-top{
+  .small {
+    font-size: modular_scale(2);
+    color: $medium-gray;
+    margin: 0;
+    font-weight: 300;
+    position: relative;
+
+    @include media($small-screen-down) {
+      margin-left: 5px;
+    };
+  }
+
+  button {
+    float: right;
+    margin: 0 5px 1em 0;
+  }
+}
+
+.wiki-left {
+  @include span_columns(12);
+  @include media($medium-screen-up) {
+    @include span_columns(9);
+  };
+
+  margin-bottom: 1em;
+
+  .wiki-article {
+    padding: 2em 1em;
+    min-height: 50vh;
+    @include media($medium-screen-up) {
+      padding: 1em;
+    }
+
+    .btn-faded {
+      background-color: white;
+      border-radius: 50%;
+    }
+  }
+
+  .wiki-footer {
+    padding: 1em;
+    background-color: $secondary-background-color;
+  }
+}
+
+.wiki-right {
+  @include span_columns(10);
+  @include media($medium-screen-up) {
+    @include span_columns(3);
+  };
+
+  button {
+    width: 100%;
+    margin-bottom: modular_scale(0);
+  }
+
+  .wiki-aside {
+    padding: 1em;
+  }
+}
