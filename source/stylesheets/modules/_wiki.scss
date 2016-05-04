@@ -31,10 +31,18 @@
     @include media($medium-screen-up) {
       padding: 1em;
     }
+    transition: box-shadow 0.5s ease;
+    .edit-content {
+      position: absolute;
+      top: 0;
+      right: 0;
 
-    .btn-faded {
-      background-color: white;
-      border-radius: 50%;
+    }
+    .save-content {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: none;
     }
   }
 
@@ -51,12 +59,26 @@
     @include span_columns(3);
   };
 
-  button {
+  .add-page {
     width: 100%;
     margin-bottom: modular_scale(0);
   }
 
   .wiki-aside {
     padding: 1em;
+    position: relative;
+
+    .edit-content {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+    }
+    .save-content {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: none;
+    }
   }
 }

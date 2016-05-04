@@ -53,3 +53,21 @@
   margin-top: modular_scale(2);
   text-align: right;
 }
+
+.close-task-btn {
+  background-color: white;
+  border: 1px solid $dark;
+  color: $dark;
+  margin-top: modular_scale(1);
+
+  @include span-columns(8);
+  @include shift(2);
+
+  @include media($medium-screen-up) {
+    @include span-columns(3);
+  };
+
+  &:hover {
+    background-color: $blue;
+  }
+}
