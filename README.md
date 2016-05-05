@@ -1,77 +1,29 @@
-# Boilermaker
+## BuzzHub
 
-A quick boilerplate/tool for prototyping, blogging, or static pages. Boilermaker is a template for easily building and deploying static pages for those comfortable with the Ruby/Rails ecosystem.
+BuzzHub is GitHub without the Git. It is a design concept by David Ray to bring the project management and communication features of GitHub to a any small to medium sized business. The four main concepts that were extracted are **Document Creation**, **Wiki**, **Issues** (called **Tasks** here), and **Document Storage/Management**. BuzzHub is designed to compete in the same project management software as [Basecamp](https://basecamp.com/) and [Sharepoint](https://products.office.com/en-us/sharepoint/collaboration). It's follows [Slack](https://slack.com/)'s model of bringing IRC chat to non-technical people in a friendly, well designed SaaS model. BuzzHub can provide an asynchronous backend to Slack's synchronous chat communication.
 
-### Boilermaker is built on top of:
+### Document Creation
 
-- **[Middleman](https://middlemanapp.com/):** Static Page Generator
-- **[Thoughtbot](https://thoughtbot.com/):** Sass framework
-  - [Bourbon](http://bourbon.io/): Sass mixin library
-  - [Neat](http://neat.bourbon.io/): Semantic grid
-  - [Bitters](http://bitters.bourbon.io/): Lightweight scaffolded structure
-- **[Surge.sh](http://surge.sh/):** Easy & Free deployment
+One of the most important files in every GitHub repo is the README.md. It's an incredibly straightforward document that often provides instructions, announcements or links to other documents throughout the repo.
 
-## Getting Started
+GitHub text documents are written in Markdown, which is a very easy language for developers to understand and use, but it is a little complicated for the average non-technical user. BuzzHub is designed to provide as little friction as possible and to get people writing and communicating. So instead of Markdown processing, BuzzHub uses a [Medium](http://medium.com) style editor, which is a lot easier for the non-technical user. Feel free to give it a shot! Click the "edit" button in the upper right corner and start typing and highlighting text on this document.
 
-```term
-$ git clone https://github.com/david-ray-wc/boilermaker.git your-project-name
-$ cd your-project-name
-$ bundle install
-$ git remote rm origin
-$ middleman -p 3030
-```
+**More About Documents**
 
-**That's it.**
+For BuzzHub, it doesn't end with just the frontpage README. Users can create Pages (Like our [Marketing Playbook](http://buzzhub.daplgray.com/marketing-playbook)), this is a simple document that might contain a meeting agenda or a "How To" of a specific procedure. These documents are collaberative and living, easily accessable and easy enough for anyone to write.
 
-## Features
+Users can create new Spaces (like our [Marketing group](http://buzzhub.daplgray.com/marketing-site)). Spaces are like nested repos inside of larger repos. Each Space can have more Spaces or Pages inside of them.
 
-Boilermaker very quickly gets you up and running with a well layed out document structure. There is a very intuitive document structure to easliy write organized modular code using erb & scss partials.
+### Wiki
 
-**Semantic Grid**
+The [Wiki](http://buzzhub.daplgray.com/wiki) documenting company policies, procedures, or any other use. Pages can easily be created and linked together. There is also a customizable sidebar and footer for the Wiki.
 
-**Responsive Typography**
+### Tasks
 
-**Sticky Footer** (That works without needing to declare a height for your footer)
+In GitHub, these are called Issues, but BuzzHub refers to them as [Tasks](http://buzzhub.daplgray.com/home-tasks-index). Each Space gets its own Tasks section and users can view the tasks they're assigned to or have created from their [Profile](http://buzzhub.daplgray.com/user-page) page.
 
-**Mobile First**
+### Document Storage/Management
 
-**Markdown Parsing**
+While BuzzHub is just a design concept, a feature that it could have is the ability to upload and store files, or also link to other cloud storage services like Dropbox, Box & Google Drive.
 
-**jQuery** (If you don't like it, you can get rid of it)
-
-**ERB templating**
-
-## Deployment
-
-One of the best features of Boilermaker is how easy Surge makes it to deploy. It makes Github Pages look confusing in comparison.
-
-**Requirements**
-
-[Surge](http://surge.sh)
-
-**Steps**
-
-When you're done with you're site and want to deploy it just do the following.
-
-```
-$ middleman build #this builds the static site into the build directory
-$ surge build #this tells surge to deploy only the build directory
-```
-
-That's it. Assets are automatically gziped and all routes are clean (*/about instead of /about.html*). Surge also provides redirects to a custom 404 page and free custom domain. Make sure you enter your own domain in the CNAME file and that your domain hostnames @ and www are set to
-
-```
-na-west1.surge.sh
-```
-
-## Why the name?
-
-I figured since Thoughtbot named all of their Sass tools after whiskey, I'd do the same for my boilerplate. A Boilermaker cockatil is when you drop a shot of whiskey in a pint of beer.
-
-## Special Thanks
-
-- [Middleman](https://middlemanapp.com/)
-- [Thoughtbot](https://thoughtbot.com/)
-- [Font Awesome](http://fontawesome.io/)
-- [Surge.sh](http://surge.sh)
-- [jQuery](http://jquery.com/)
+Take a look around and if you have any comments, contact me at David.Ray.WC@gmail.com
