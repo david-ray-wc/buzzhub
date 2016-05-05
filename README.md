@@ -6,7 +6,7 @@ BuzzHub is GitHub without the Git. It is a design concept by David Ray to bring 
 
 One of the most important files in every GitHub repo is the README.md. It's an incredibly straightforward document that often provides instructions, announcements or links to other documents throughout the repo.
 
-GitHub text documents are written in Markdown, which is a very easy language for developers to understand and use, but it is a little complicated for the average non-technical user. BuzzHub is designed to provide as little friction as possible and to get people writing and communicating. So instead of Markdown processing, BuzzHub uses a [Medium](http://medium.com) style editor, which is a lot easier for the non-technical user. Feel free to give it a shot! Click the "edit" button in the upper right corner and start typing and highlighting text on this document.
+GitHub text documents are written in Markdown, which is a very easy language for developers to understand and use, but it is a little complicated for the average non-technical user. BuzzHub is designed to provide as little friction as possible and to get people writing and communicating. So instead of Markdown processing, BuzzHub uses a [Medium](http://medium.com) style editor, which is a lot easier for the non-technical user.
 
 **More About Documents**
 
