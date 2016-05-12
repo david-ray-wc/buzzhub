@@ -50,7 +50,7 @@ i.fa {
   @include row();
 }
 
-// Buttons
+/* Buttons*/
 .btn-faded {
   padding: 5px;
   color: $medium-gray;
@@ -96,7 +96,7 @@ i.fa {
   };
 }
 
-// Responsive Helpers
+/* Responsive Helpers*/
 .visible-md {
   display: none;
   @include media($medium-screen-up) {

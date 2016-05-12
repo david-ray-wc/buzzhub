@@ -2,9 +2,10 @@
   @include row;
 }
 
-// General Card
+/* General Card*/
 .card {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -webkit-transition: box-shadow 0.5s ease;
   transition: box-shadow 0.5s ease;
   outline: none;
 
@@ -12,27 +13,56 @@
     background-color: $dark;
     padding: 1em;
 
-    // flex properties
+    /* flex properties*/
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
     .left {
-      flex: 7;
+      -webkit-box-flex: 7;
+      -webkit-flex: 7;
+          -ms-flex: 7;
+              flex: 7;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
-      justify-content: space-around;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
 
       @include media($medium-screen-up) {
-        flex: 3;
+        -webkit-box-flex: 3;
+        -webkit-flex: 3;
+            -ms-flex: 3;
+                flex: 3;
       };
     }
 
     button {
-      flex: 1;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
     }
     .fa-block {
-      flex: 1;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
     }
 
     p {

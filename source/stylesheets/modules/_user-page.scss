@@ -1,0 +1,113 @@
+.user-page-left {
+  padding: 1em;
+  margin-bottom: modular_scale(1);
+
+  @include span_columns(10);
+  @include media($medium-screen-up) {
+    @include span_columns(4);
+  };
+  @include media($large-screen-up) {
+    @include span_columns(3);
+  };
+
+  .row {
+    border-bottom: 1px solid $secondary-background-color;
+    padding-bottom: modular_scale(-1);
+    margin-bottom: modular_scale(-1);
+  }
+
+  .figure {
+    @include span_columns(4);
+    @include media($medium-screen-up) {
+      @include span_columns(12);
+    }
+  }
+
+  .figcaption {
+    @include span_columns(8);
+    @include media($medium-screen-up) {
+      @include span_columns(12);
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+  h2 {
+    font-weight: 300;
+  }
+
+  h4 {
+    margin: 5px 0;
+  }
+  .bio {
+    font-weight: 300;
+    padding: 5px;
+  }
+  ul {
+    padding-left: modular_scale(0);
+  }
+  li {
+    list-style: none;
+    padding-bottom: modular_scale(0);
+
+    @include media($medium-screen-up) {
+      padding-bottom: modular_scale(-2);
+    };
+  }
+  .email {
+    font-size: modular_scale(-1);
+    i {
+      font-size: modular_scale(0);
+    }
+  }
+}
+
+.user-page-right {
+  @include span_columns(12);
+  @include media($medium-screen-up) {
+    @include span_columns(8);
+  };
+  @include media($large-screen-up) {
+    @include span_columns(7);
+  };
+  ul {
+    padding-left: 0;
+    @include media($small-screen-down) {
+      margin-left: 5px;
+    }
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  hr {
+    margin: modular_scale(-2) auto;
+    width: 66%;
+    color: $secondary-background-color;
+  }
+}
+
+.user-page-task {
+  background-color: $secondary-background-color;
+  border-bottom: 0;
+
+  .section-left {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    i {
+      padding: 0;
+    }
+  }
+  .section-right {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+  }
+}

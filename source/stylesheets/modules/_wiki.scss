@@ -31,6 +31,7 @@
     @include media($medium-screen-up) {
       padding: 1em;
     }
+    -webkit-transition: box-shadow 0.5s ease;
     transition: box-shadow 0.5s ease;
     .edit-content {
       position: absolute;

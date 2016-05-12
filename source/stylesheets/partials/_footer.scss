@@ -1,15 +1,8 @@
 .page-footer {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-top: 2em;
-  border-top: 1px solid $base-border-color;
-  li {
-    line-height: 1.75;
-  }
-  .column-left {
-    @include span-columns(1 of 2);
-  }
-  .column-right {
-    @include span-columns(1 of 2);
-  }
+  @include outer-container();
+  padding: modular_scale(2);
+  margin-top: modular_scale(2);
+  border-top: 1px solid $light-gray;
+  text-align: right;
+  color: $medium-gray;
 }
